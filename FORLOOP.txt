@@ -1,0 +1,148 @@
+1. Write a Python program to calculate the factorial of a given number using a loopp
+input: 5
+output: 120
+CODE : num = int(input("enter a number"))
+fact = 1
+i = 1 
+for i in range(1,num+1):
+          fact = fact * i
+          i+=1
+print(fact)
+2. WAP to search the number in existing number
+num=1234
+search_num=4
+output: yes it is available
+
+num = 1234
+n= num
+find = 6
+c = 0
+l = str(num)
+
+for i in range(len(l)):
+    
+    rem = n%10
+    if rem==find:
+        c+=1
+    n//=10
+if c >0:
+    print("yes it is available")
+else:
+    print("not available")'''
+
+3. Create a program to check whether a given number is prime or not using a loop.
+input: 11
+output: It is prime number 
+
+Definition:
+prime number: Prime numbers are natural numbers that are divisible by only 1 and the number itself. 
+
+4. Write a Python program to generate the Fibonacci series up to a specified limit using a loop.
+input: 7
+output: 0,1,1,2,3,5,8
+n = 8
+a =0
+b =1
+print(a)
+print(b)
+for i in range(2,n+1): # 
+    temp = a+b # 1, 2 ,3 5 8
+    a=b # 1, 1 , 2 3 
+    b=temp #1 2, 3 5
+    print(b)
+    i+=1
+
+
+    
+
+
+
+5. Create a program to print the multiplication table of a given number using a loop.
+n = 5
+
+for i in range(1,11):
+    print(n, "X" , i , '=', n*i)
+    i+=1
+5 X 1 = 5
+5 X 2 = 10
+5 X 3 = 15
+5 X 4 = 20
+5 X 5 = 25
+5 X 6 = 30
+5 X 7 = 35
+5 X 8 = 40
+5 X 9 = 45
+5 X 10 = 50
+
+
+Q6. Wap takes a number from the user and prints its reverse no.
+
+
+n = int(input("enter the number you want to reverse"))
+n1=n
+rev=0
+l = str(n)
+
+for i in range(len(l)):
+    rem = n1%10
+    rev=(rev*10)+rem
+    n1//=10
+print(rev)
+
+
+Q7. Wap takes a number from the user and checks whether it is palindrome or not.
+
+
+
+
+
+n = int(input("enter the number you want to reverse"))
+n1=n
+rev=0
+l = str(n)
+
+for i in range(len(l)):
+    rem = n1%10
+    rev=(rev*10)+rem
+    n1//=10
+if rev==n:
+    print("palindrome")
+else:
+    print("not palindrome")
+print(rev)
+
+
+
+Q8. Wap takes a number from the user and finds the sum and count of only an even number from it.
+n = int(input("enter the number you want to reverse"))
+n1=n
+rev=0
+l = str(n)
+s =0
+c=0
+
+for i in range(len(l)):
+    rem = n1%10
+    if rem%2==0:
+        s = s+rem
+        c+=1
+        print(rem)
+    n1//=10
+print(s,c)   
+
+Q9. Wap takes a number from the user and finds the sum and count of only odd number from it.
+n = int(input("enter the number you want to reverse"))
+n1=n
+rev=0
+l = str(n)
+s =0
+c=0
+
+for i in range(len(l)):
+    rem = n1%10
+    if rem%2!=0:
+        s = s+rem
+        c+=1
+        print(rem)
+    n1//=10
+print(s,c)    
